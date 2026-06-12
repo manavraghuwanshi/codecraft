@@ -1,0 +1,25 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.inputGroup {
+  margin-bottom: 18px;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 420px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.error {
+  color: red;
+  font-size: 8px;
+  margin-top: 1px;
+}
