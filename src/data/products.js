@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    title: "Apple iPhone 15",
+    description: "128GB, Blue, A16 Bionic Chip",
+    category: "Mobiles",
+    price: 79999,
+    imageUrl: "https://picsum.photos/300?random=1",
+  },
+  {
+    id: 2,
+    title: "Samsung Galaxy S24",
+    description: "256GB, AMOLED Display, 5G",
+    category: "Mobiles",
+    price: 74999,
+    imageUrl: "https://picsum.photos/300?random=2",
+  },
+  {
+    id: 3,
+    title: "Sony Headphones",
+    description: "Wireless Noise Cancelling Headphones",
+    category: "Electronics",
+    price: 19999,
+    imageUrl: "https://picsum.photos/300?random=3",
+  },
+  {
+    id: 4,
+    title: "Apple Watch Series 10",
+    description: "GPS, 45mm, Midnight Aluminum",
+    category: "Wearables",
+    price: 42999,
+    imageUrl: "https://picsum.photos/300?random=4",
+  },
+  {
+    id: 5,
+    title: "Dell Inspiron Laptop",
+    description: "Intel i5, 16GB RAM, 512GB SSD",
+    category: "Laptops",
+    price: 62999,
+    imageUrl: "https://picsum.photos/300?random=5",
+  },
+  {
+    id: 6,
+    title: "Boat Rockerz 550",
+    description: "Bluetooth Over-Ear Headphones",
+    category: "Electronics",
+    price: 2499,
+    imageUrl: "https://picsum.photos/300?random=6",
+  },
+  {
+    id: 7,
+    title: "Nike Air Max",
+    description: "Comfortable Running Shoes",
+    category: "Footwear",
+    price: 5999,
+    imageUrl: "https://picsum.photos/300?random=7",
+  },
+  {
+    id: 8,
+    title: "Levi's Jeans",
+    description: "Slim Fit Blue Denim Jeans",
+    category: "Fashion",
+    price: 2999,
+    imageUrl: "https://picsum.photos/300?random=8",
+  },
+];
+
+export default products;
