@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home/home";
 import ProductDetail from "./pages/product-detail/productDetail";
 import Cart from "./components/cart/cart";
+import Checkout from "./pages/checkout/checkout";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -49,13 +50,14 @@ function App() {
 
       <main style={{ padding: "20px", display: "flex", justifyContent: "center" }}>
         <Routes>
+          <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/login"} replace />} />
           <Route path="/login" element={<LoginForm onLoginSuccess={handleLoginSuccess} />} />
           <Route path="/" element={isAuthenticated ? <Home addToCart={addToCart}/> : <Navigate to="/login" replace />} />
           <Route path="/about" element={isAuthenticated ? <About /> : <Navigate to="/login" replace />} />
           <Route path="/profile" element={isAuthenticated ? <Profile /> : <Navigate to="/login" replace />} />
           <Route path="/cart" element={isAuthenticated ? <Cart cartItems={cartItems}/> : <Navigate to="/login" replace />} />
-          <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/login"} replace />} />
           <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
+          <Route path="/checkout" element={isAuthenticated ? <Checkout/> : <Navigate to="/login" replace/>}/>
         </Routes>
       </main>
     </div>
